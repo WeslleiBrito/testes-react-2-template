@@ -56,14 +56,11 @@ const BuyBtn = styled.button`
 
     &:focus {
         outline: none;
-        box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.3);
+        box-shadow: 0 0 0 3px rgba(66, 135, 244, 0.3);
     }
 `
 
-function ProductCard({
-    product,
-    addToCart
-}) {
+function ProductCard({product, addToCart}) {
     return (
         <Container key={product.id}>
             <Image src={product.image} alt={product.title} />
